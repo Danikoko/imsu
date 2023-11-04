@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMSU</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/globals.css" />
+    <link rel="stylesheet" href="./assets/css/all-css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="fixed-top">
+            <div class="container-fluid">
+                <div class="row bg-greenish px-4 px-lg-8 py-2 text-white">
+                    <div class="col-8 col-md-2 self-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-inline">
+                                    <img alt="twitter-icon" class="mr-2 mr-lg-3" style="color: transparent;"
+                                        src="./assets/svgs/icons/twitter.svg" />
+                                </div>
+                                <div class="d-inline">
+                                    <img alt="facebook-icon" class="mr-2 mr-lg-3" style="color: transparent;"
+                                        src="./assets/svgs/icons/facebook.svg" />
+                                </div>
+                                <div class="d-inline">
+                                    <img alt="instagram-icon" class="mr-2 mr-lg-3" style="color: transparent;"
+                                        src="./assets/svgs/icons/instagram.svg" />
+                                </div>
+                                <div class="d-inline">
+                                    <img alt="linkedin-icon" class="mr-2 mr-lg-3" style="color: transparent;"
+                                        src="./assets/svgs/icons/linkedin.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 d-none d-md-block text-center">
+                        <ul class="top-bar-list navbar-nav ml-auto mt-2 mt-lg-0 top-navbar d-inline">
+                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Staff</a></li>
+                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Students</a></li>
+                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Alumni</a></li>
+                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Transcript</a></li>
+                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Donations</a></li>
+                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Payments</a></li>
+                            <li class="mx-2 nav-item"><a class="nav-link" href="#">TETFUND Interventions</a></li>
+                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Scholarships</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-md-2 align-self-center">
+                        <div class="text-right"><button class="top-bar-button px-2 py-1" type="button">Webmail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-white px-4 px-lg-8 py-1 py-lg-4 text-black d-none d-lg-flex">
+                    <div class="col-8 col-lg-8">
+                        <a href="/"><img alt="Logo" style="color: transparent;" src="./assets/svgs/logo.svg" /></a>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block text-right self-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-inline-block pr-5">
+                                    <div class="row">
+                                        <div class="col-3 align-self-end pr-0">
+                                            <img alt="Email icon" style="color: transparent;"
+                                                src="./assets/svgs/icons/email.svg" />
+                                        </div>
+                                        <div class="col-9 text-left">
+                                            <span class="d-block">
+                                                Email Us!
+                                            </span>
+                                            <a class="text-black" href="mailto:info@imsu.edu.ng" target="_blank">
+                                                info@imsu.edu.ng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-inline-block pl-4 border-left-light">
+                                    <div class="row">
+                                        <div class="col-3 align-self-end px-0">
+                                            <img alt="Phone icon" style="color: transparent;"
+                                                src="./assets/svgs/icons/phone.svg" />
+                                        </div>
+                                        <div class="col-9 text-left">
+                                            <span class="d-block">
+                                                Call Us!
+                                            </span>
+                                            <a class="text-black" href="tel:+2348088098889" target="_blank">
+                                                08038558948
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="row navbar navbar-expand-lg navbar-light bg-white px-0 py-0 d-block">
+                    <div class="d-flex d-lg-none row px-4">
+                        <div class="col-8">
+                            <a class="navbar-brand w-100" href="/"><img alt="Logo" style="color: transparent;"
+                                    src="./assets/svgs/logo.svg" /></a>
+                        </div>
+                        <div class="col-4 col-lg-12 self-center text-right">
+                            <button id="navTogglerBtn" class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#mainNavbarToggler" aria-controls="mainNavbarToggler" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="fas fa-bars"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse bg-dark-bluish px-4 px-lg-8 py-1" id="mainNavbarToggler">
+                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0 top-navbar">
+                            <li class="active nav-item"><a class="nav-link" href="#">About IMSU</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">Academics</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">Units</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">Research</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">Resources</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">Admission</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">Enterprise</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">Campuses</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">E-Learning</a></li>
+                            <li class="false nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                            <li class="false nav-item">
+                                <a class="nav-link p-0" href="#">
+                                    <button class="green-button px-3 py-2 h-auto w-100">
+                                        Portal
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div>
+            <div class="main-lg-mt d-none d-lg-block"></div>
+            <div class="main-mt d-block d-lg-none"></div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-interval="5000" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- <div class="carousel-item relative">
+                        <img alt="Slider image 1" class="d-block d-lg-none w-100" style="color: transparent;"
+                            src="./assets/images/Slider-1-sm.jpg" />
+                        <img alt="Slider image 1" class="d-none d-lg-block w-100" style="color: transparent;"
+                            src="./assets/images/Slider-1.jpg" />
+                        <div class="carousel-caption-updated px-4 px-lg-0 absolute text-center text-lg-left w-lg-75">
+                            <h1 data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white carousel-header w-lg-75 aos-init aos-animate">Facilitate The Creation
+                                Of At Least 1000 Viable Startups</h1>
+                            <p data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white carousel-subtitle d-none d-lg-block w-60 aos-init aos-animate">
+                                We believed that in today’s age of innovation, every educator and institution must be
+                                innovative
+                            </p>
+                            <p data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white carousel-subtitle d-block d-lg-none aos-init aos-animate">
+                                We believed that in today’s age of innovation, every educator and institution must be
+                                innovative
+                            </p>
+                            <button data-aos="zoom-in" data-aos-duration="1000"
+                                class="green-button mt-2 mt-lg-4 aos-init">Read more</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative">
+                        <img alt="Slider image 2" class="d-block d-lg-none w-100" style="color: transparent;"
+                            src="./assets/images/Slider-2-sm.jpg" />
+                        <img alt="Slider image 2" class="d-none d-lg-block w-100" style="color: transparent;"
+                            src="./assets/images/Slider-2.jpg" />
+                        <div class="carousel-caption-updated px-4 px-lg-0 absolute text-center text-lg-left w-lg-75">
+                            <h1 data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white carousel-header w-lg-75 aos-init aos-animate">Facilitate The Creation
+                                Of At Least 1000 Viable Startups</h1>
+                            <p data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white carousel-subtitle d-none d-lg-block w-60 aos-init aos-animate">
+                                We believed that in today’s age of innovation, every educator and institution must be
+                                innovative
+                            </p>
+                            <p data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white carousel-subtitle d-block d-lg-none aos-init aos-animate">
+                                We believed that in today’s age of innovation, every educator and institution must be
+                                innovative
+                            </p>
+                            <button data-aos="zoom-in" data-aos-duration="1000"
+                                class="green-button mt-2 mt-lg-4 aos-init aos-animate">Read more</button>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item relative active">
+                        <img alt="Slider image 3" class="d-block d-lg-none w-100" style="color: transparent;"
+                            src="./assets/images/Slider-1-sm.jpg" />
+                        <img alt="Slider image 3" class="d-none d-lg-block w-100" style="color: transparent;"
+                            src="./assets/images/Slider-1.jpg" />
+                        <div class="carousel-caption-updated px-4 px-lg-0 absolute text-center text-lg-left w-lg-75">
+                            <h1 data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white d-inline-block carousel-header px-4 aos-init aos-animate">Welcome
+                                to Imo State
+                                University</h1>
+                            <br />
+                            <h2 data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white d-inline-block carousel-sub-header px-4 aos-init aos-animate">The
+                                Star Citadel of
+                                Learning</h2>
+                            <p data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white carousel-subtitle d-none d-lg-block w-60 aos-init aos-animate">
+                                Your Gateway to Knowledge and Excellence
+                            </p>
+                            <p data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white carousel-subtitle d-block d-lg-none aos-init aos-animate">
+                                Your Gateway to Knowledge and Excellence
+                            </p>
+                            <button data-aos="zoom-in" data-aos-duration="1000"
+                                class="green-button px-0 font-bold mt-2 mt-lg-4 aos-init aos-animate">APPLY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 px-lg-8"
+                style="background-image: url('./assets/svgs/general/slope.svg'); background-size: cover;">
+                <div class="d-none d-lg-block" style="padding-top: 50px;"></div>
+                <div class="d-block d-lg-none" style="padding-top: 580px;"></div>
+                <div class="px-0 px-lg-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 text-center d-none d-lg-flex">
+                            <img alt="Welder image" class="w-100" style="color: transparent;"
+                                src="./assets/svgs/general/vc.svg" />
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000"
+                            class="col-12 col-lg-6 pr-lg-5 self-center aos-init">
+                            <h3 class="text-black welcome-heading mb-3 text-lg-left text-center font-bold">
+                                WELCOME TO IMO STATE UNIVERSITY
+                            </h3>
+                            <p class="text-black welcome-subtitle mb-4 text-lg-left text-center" style="hyphens: none;">
+                                Imo State University was established in 1981 and has since grown to become one of the
+                                leading universities in the country. The university offers a wide range of undergraduate
+                                and
+                                postgraduate programs in fields. It also has a strong research focus and is known for
+                                its
+                                commitment to academic excellence and innovation
+                            </p>
+                            <p class="text-black welcome-subtitle mb-4 text-lg-left text-center" style="hyphens: none;">
+                                Imo State University was established in 1981 and has since grown to become one of the
+                                leading universities in the country. The university offers a wide range of undergraduate
+                                and
+                                postgraduate programs in fields. It also has a strong research focus and is known for
+                                its
+                                commitment to academic excellence and innovation
+                            </p>
+                            <div class="text-lg-left text-center"><button class="green-button font-bold px-0">APPLY
+                                    NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 px-lg-8" style="margin-top: 100px; margin-bottom: 50px;">
+                <div class="row mx-1 mx-lg-0">
+                    <div class="col-12 text-black text-center">
+                        <h3 class="welcome-heading font-bold">EXPLORE IMSU</h3>
+                        <p class="mb-4 text-black">Find out what makes our student experience so rich, meaningful and
+                            life-changing.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="px-2">
+                                    <div class="discover-card p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img alt="Discover SVG" class="w-100"
+                                                    style="color: transparent; height: fit-content;"
+                                                    src="./assets/svgs/discover/discover-1.svg" />
+                                            </div>
+                                            <div class="col-12 mb-0 px-4 py-2">
+                                                <h5 class="text-black text-center mb-0 m-2 font-bold">IMSU Online
+                                                    Courses
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="px-2">
+                                    <div class="discover-card p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img alt="Discover SVG" class="w-100"
+                                                    style="color: transparent; height: fit-content;"
+                                                    src="./assets/svgs/discover/discover-2.svg" />
+                                            </div>
+                                            <div class="col-12 mb-0 px-4 py-2">
+                                                <h5 class="text-black text-center mb-0 m-2 font-bold">Programme of
+                                                    Studies
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="px-2">
+                                    <div class="discover-card p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img alt="Discover SVG" class="w-100"
+                                                    style="color: transparent; height: fit-content;"
+                                                    src="./assets/svgs/discover/discover-3.svg" />
+                                            </div>
+                                            <div class="col-12 mb-0 px-4 py-2">
+                                                <h5 class="text-black text-center mb-0 m-2 font-bold">Research &amp;
+                                                    Development
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="px-2">
+                                    <div class="discover-card p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img alt="Discover SVG" class="w-100"
+                                                    style="color: transparent; height: fit-content;"
+                                                    src="./assets/svgs/discover/discover-4.svg" />
+                                            </div>
+                                            <div class="col-12 mb-0 px-4 py-2">
+                                                <h5 class="text-black text-center mb-0 m-2 font-bold">Admission
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="px-2">
+                                    <div class="discover-card p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img alt="Discover SVG" class="w-100"
+                                                    style="color: transparent; height: fit-content;"
+                                                    src="./assets/svgs/discover/discover-5.svg" />
+                                            </div>
+                                            <div class="col-12 mb-0 px-4 py-2">
+                                                <h5 class="text-black text-center mb-0 m-2 font-bold">Scholarship
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="px-2">
+                                    <div class="discover-card p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img alt="Discover SVG" class="w-100"
+                                                    style="color: transparent; height: fit-content;"
+                                                    src="./assets/svgs/discover/discover-6.svg" />
+                                            </div>
+                                            <div class="col-12 mb-0 px-4 py-2">
+                                                <h5 class="text-black text-center mb-0 m-2 font-bold">IMSU Alumni
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="px-2">
+                                    <div class="discover-card p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img alt="Discover SVG" class="w-100"
+                                                    style="color: transparent; height: fit-content;"
+                                                    src="./assets/svgs/discover/discover-7.svg" />
+                                            </div>
+                                            <div class="col-12 mb-0 px-4 py-2">
+                                                <h5 class="text-black text-center mb-0 m-2 font-bold">IMSU Centers
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="px-2">
+                                    <div class="discover-card p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img alt="Discover SVG" class="w-100"
+                                                    style="color: transparent; height: fit-content;"
+                                                    src="./assets/svgs/discover/discover-8.svg" />
+                                            </div>
+                                            <div class="col-12 mb-0 px-4 py-2">
+                                                <h5 class="text-black text-center mb-0 m-2 font-bold">Campus Lifestyle
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 px-lg-8"
+                style="margin-top: 10px; padding-top: 80px; padding-bottom: 80px; background-image: url('./assets/images/inforgaphic.jpg'); background-size: cover;">
+                <div class="row mx-1 mx-lg-0">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h3 data-aos="flip-left" data-aos-duration="1000"
+                                class="text-white d-inline-block join-imsu-header px-4 aos-init aos-animate mb-3">The
+                                Join IMSU Community</h3>
+                            <p class="text-white">
+                                Joi us on our community platform to stay updated with important updates and happenings
+                                in the university.
+                            </p>
+                            <button data-aos="zoom-in" data-aos-duration="1000"
+                                class="green-button px-0 mt-2 mt-lg-4 aos-init aos-animate">Join Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="px-4 px-lg-8" style="padding-bottom: 30px;">
+                <div class=" row mx-1 mx-lg-0">
+                    <div class="col-12 my-5 text-center">
+                        <h3 class="welcome-heading font-bold text-black">OUR PROGRAMME STUDIES
+                        </h3>
+                        <p class="text-black">Find out what makes our student experience so rich, meaningful and
+                            life-changing.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row mb-4">
+                            <div class="position-relative col-lg-6 col-12 mb-4 aos-init" data-aos="fade-up"
+                                data-aos-duration="1000"
+                                style="background: url(./assets/images/programme-studies-1.jpg); background-size: cover;">
+                                <div class="text-center position-absolute"
+                                    style="top: 50%; width: -webkit-fill-available;">
+                                    <a href="#" class="main-link fs-3 font-bold">
+                                        Post Graduate
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="row">
+                                    <div class="position-relative col-lg-6 col-12 mb-4"
+                                        style="background: url(./assets/images/programme-studies-2.jpg); background-size: cover; min-height: 250px;">
+                                        <div class="text-center position-absolute"
+                                            style="top: 50%; width: -webkit-fill-available;">
+                                            <a href="#" class="main-link fs-3 font-bold">
+                                                Under-Graduate
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative col-lg-6 col-12 mb-4"
+                                        style="background: url(./assets/images/programme-studies-3.jpg); background-size: cover; min-height: 250px;">
+                                        <div class="text-center position-absolute"
+                                            style="top: 50%; width: -webkit-fill-available;">
+                                            <a href="#" class="main-link fs-3 font-bold">
+                                                Continuing Education
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative col-lg-6 col-12 mb-4"
+                                        style="background: url(./assets/images/programme-studies-4.jpg); background-size: cover; min-height: 250px;">
+                                        <div class="text-center position-absolute"
+                                            style="top: 50%; width: -webkit-fill-available;">
+                                            <a href="#" class="main-link fs-3 font-bold">
+                                                Pre-Degree
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative col-lg-6 col-12 mb-4"
+                                        style="background: url(./assets/images/programme-studies-5.jpg); background-size: cover; min-height: 250px;">
+                                        <div class="text-center position-absolute"
+                                            style="top: 50%; width: -webkit-fill-available;">
+                                            <a href="#" class="main-link fs-3 font-bold">
+                                                JUPEB
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center"><button
+                                class="blue-outline-button outline-button-lg m-2">Explore
+                                More Programmes</button></div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="px-4 px-lg-8 d-none d-lg-block" style="padding-top: 50px; padding-bottom: 50px;">
+                <div class="row">
+                    <div class="col-12 col-lg-6 row mx-1 mx-lg-0 pl-1">
+                        <div class="col-12">
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h2
+                                        class="text-black welcome-heading my-4 text-center text-lg-left my-lg-5 font-bold">
+                                        Latest News &amp; Update
+                                    </h2>
+                                </div>
+                                <div class="false col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="px-2">
+                                        <div class="discover-card bg-white shadow-none p-0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <img alt="Discover SVG" class="w-100"
+                                                        style="color: transparent; height: fit-content;"
+                                                        src="./assets/svgs/news/news-1.svg" />
+                                                </div>
+                                                <div class="col-12 mb-2 px-4 py-2">
+                                                    <h5 class="text-black m-2 font-bold">Alumni chairman promises to
+                                                        revamp IMSU sports</h5>
+                                                    <p class="text-black m-2">Imo State Technology Innovation Center
+                                                        Owerri is a multi-ventureation ecosystem that brings strategic
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="px-2">
+                                        <div class="discover-card bg-white shadow-none p-0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <img alt="Discover SVG" class="w-100"
+                                                        style="color: transparent; height: fit-content;"
+                                                        src="./assets/svgs/news/news-2.svg" />
+                                                </div>
+                                                <div class="col-12 mb-2 px-4 py-2">
+                                                    <h5 class="text-black m-2 font-bold">Balance academics with
+                                                        morality, IMSU VC urges universities</h5>
+                                                    <p class="text-black m-2">Imo State Technology Innovation Center
+                                                        Owerri is a multi-ventureation ecosystem that brings strategic
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-5 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="px-2">
+                                        <div class="discover-card p-0 bg-white shadow-none">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <img alt="Discover SVG" class="w-100"
+                                                        style="color: transparent; height: fit-content;"
+                                                        src="./assets/svgs/news/news-3.svg" />
+                                                </div>
+                                                <div class="col-12 mb-2 px-4 py-2">
+                                                    <h5 class="text-black m-2 font-bold">Commencement of Pre Degree
+                                                        Admission
+                                                    </h5>
+                                                    <p class="text-black m-2">Imo State Technology Innovation Center
+                                                        Owerri is a multi-ventureation ecosystem that brings strategic
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mx-1 mx-lg-0 pl-2">
+                        <div class="pb-lg-5" style="background-color: #f5f5f5;">
+                            <div class="row pl-lg-5 pr-lg-3 pb-5">
+                                <div class="col-12">
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h4 class="text-black welcome-heading text-center text-lg-left my-4 my-lg-5 font-bold"
+                                                style="font-size: 25px;">Upcoming Events</h4>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card bg-white p-0"
+                                                    style="box-shadow: none; border-radius: 0px;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-1.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <p class="text-black m-1 d-none d-lg-block">Resumption of
+                                                                Students after Election Break</p>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #019342;">27th March,
+                                                                    2023</span></p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Details</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card bg-white p-0"
+                                                    style="box-shadow: none;  border-radius: 0px;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-2.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <p class="text-black m-1 d-none d-lg-block">Matriculation of
+                                                                New Students for 2022/2023 Academic Session</p>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #019342;">27th March,
+                                                                    2023</span></p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Details</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card bg-white p-0"
+                                                    style="box-shadow: none; border-radius: 0px;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-1.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <p class="text-black m-1 d-none d-lg-block">Resumption of
+                                                                Students after Election Break</p>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #019342;">27th March,
+                                                                    2023</span></p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Details</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card bg-white p-0"
+                                                    style="box-shadow: none; border-radius: 0px;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-2.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <p class="text-black m-1 d-none d-lg-block">Commencement of
+                                                                First Semester Examination for 2022/2023 Academic
+                                                                Session</p>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #019342;">27th March,
+                                                                    2023</span></p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Details</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center mt-lg-5 mt-3"><button
+                                                class="green-outline-button outline-button">View All
+                                                Events</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 px-lg-8 d-block d-lg-none" style="padding-top: 10px; padding-bottom: 20px;">
+                <div class="row">
+                    <div class="col-12 col-lg-6 row mx-1 mx-lg-0 pl-1">
+                        <div class="col-12">
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h2
+                                        class="text-black welcome-heading my-4 text-center text-lg-left my-lg-5 font-bold">
+                                        Latest News &amp; Update
+                                    </h2>
+                                </div>
+                                <div class="false col-12 mb-5 aos-init aos-animate" data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                    <div class="px-2">
+                                        <div class="discover-card bg-white shadow-none p-0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <img alt="Discover SVG" class="w-100"
+                                                        style="color: transparent; height: fit-content;"
+                                                        src="./assets/svgs/news/news-1.svg" />
+                                                </div>
+                                                <div class="col-12 mb-2 px-4 py-2">
+                                                    <h5 class="text-black m-2 font-bold">Alumni chairman promises to
+                                                        revamp IMSU sports</h5>
+                                                    <p class="text-black m-2">Imo State Technology Innovation Center
+                                                        Owerri is a multi-ventureation ecosystem that brings strategic
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-5 aos-init aos-animate" data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                    <div class="px-2">
+                                        <div class="discover-card bg-white shadow-none p-0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <img alt="Discover SVG" class="w-100"
+                                                        style="color: transparent; height: fit-content;"
+                                                        src="./assets/svgs/news/news-2.svg" />
+                                                </div>
+                                                <div class="col-12 mb-2 px-4 py-2">
+                                                    <h5 class="text-black m-2 font-bold">SBalance academics with
+                                                        morality, IMSU VC urges universities</h5>
+                                                    <p class="text-black m-2">Imo State Technology Innovation Center
+                                                        Owerri is a multi-ventureation ecosystem that brings strategic
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-5 aos-init aos-animate" data-aos="fade-up"
+                                    data-aos-duration="1000">
+                                    <div class="px-2">
+                                        <div class="discover-card bg-white shadow-none p-0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <img alt="Discover SVG" class="w-100"
+                                                        style="color: transparent; height: fit-content;"
+                                                        src="./assets/svgs/news/news-3.svg" />
+                                                </div>
+                                                <div class="col-12 mb-2 px-4 py-2">
+                                                    <h5 class="text-black m-2 font-bold">Commencement of Pre Degree
+                                                        Admission
+                                                    </h5>
+                                                    <p class="text-black m-2">Imo State Technology Innovation Center
+                                                        Owerri is a multi-ventureation ecosystem that brings strategic
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mx-1 mx-lg-0 pl-2">
+                        <div class="pb-lg-5" style="background-color: #f5f5f5;">
+                            <div class="row pl-lg-5 pr-lg-3 pb-5">
+                                <div class="col-12">
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <h4 class="text-black welcome-heading text-center text-lg-left my-4 my-lg-5 font-bold"
+                                                style="font-size: 25px;">Upcoming Events</h4>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade-up"
+                                            data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card p-0" style="box-shadow: none;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-1.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <h5 class="text-black m-1 mt-lg-2 font-bold">Skill Up Imo
+                                                                Event</h5>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #ee0707;">27th March,
+                                                                    2023</span></p>
+                                                            <p class="text-black m-1 d-none d-lg-block">Imo State
+                                                                Technology Innovation Center Owerri is aosystem</p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Read
+                                                                More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade-up"
+                                            data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card p-0" style="box-shadow: none;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-2.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <h5 class="text-black m-1 mt-lg-2 font-bold">Skill Up Imo
+                                                                Event</h5>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #ee0707;">27th March,
+                                                                    2023</span></p>
+                                                            <p class="text-black m-1 d-none d-lg-block">Imo State
+                                                                Technology Innovation Center Owerri is aosystem</p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Read
+                                                                More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade-up"
+                                            data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card p-0" style="box-shadow: none;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-3.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <h5 class="text-black m-1 mt-lg-2 font-bold">Skill Up Imo
+                                                                Event</h5>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #ee0707;">27th March,
+                                                                    2023</span></p>
+                                                            <p class="text-black m-1 d-none d-lg-block">Imo State
+                                                                Technology Innovation Center Owerri is aosystem</p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Read
+                                                                More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade-up"
+                                            data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card p-0" style="box-shadow: none;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-4.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <h5 class="text-black m-1 mt-lg-2 font-bold">Skill Up Imo
+                                                                Event</h5>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #ee0707;">27th March,
+                                                                    2023</span></p>
+                                                            <p class="text-black m-1 d-none d-lg-block">Imo State
+                                                                Technology Innovation Center Owerri is aosystem</p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Read
+                                                                More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade-up"
+                                            data-aos-duration="1000">
+                                            <div class="px-2">
+                                                <div class="discover-card p-0" style="box-shadow: none;">
+                                                    <div class="row">
+                                                        <div class="col-4 pr-0 self-center">
+                                                            <img alt="Discover SVG" class="w-100"
+                                                                style="color: transparent; height: fit-content;"
+                                                                src="./assets/svgs/events/event-5.svg" />
+                                                        </div>
+                                                        <div class="col-8 mb-2 pl-3 pr-4 self-center">
+                                                            <h5 class="text-black m-1 mt-lg-2 font-bold">Skill Up Imo
+                                                                Event</h5>
+                                                            <p class="text-black m-1"><span class="font-bold">Date:
+                                                                </span><span style="color: #ee0707;">27th March,
+                                                                    2023</span></p>
+                                                            <p class="text-black m-1 d-none d-lg-block">Imo State
+                                                                Technology Innovation Center Owerri is aosystem</p>
+                                                            <button
+                                                                class="blue-outline-button-link px-0 w-auto h-auto outline-button-sm mx-1">Read
+                                                                More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center mt-lg-5 mt-3"><button
+                                                class="green-outline-button outline-button w-100">View All
+                                                Events</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="pt-5" style="background-image: url(./assets/images/footer-bg.jpg); background-size: cover;">
+                <div class="p-lg-5 p-4 px-lg-8">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 mt-2 mt-lg-0 mb-4 mb-lg-0">
+                            <div class="row">
+                                <div class="col-12 mb-4"><img alt="Logo" style="color: transparent;"
+                                        src="./assets/svgs/logo-white.svg" /></div>
+                                <div class="col-12 mb-2">
+                                    <p class="text-white" style="hyphens: none;">
+                                        Our primarily goals focuses on continuous provision of quality learning
+                                        environment and producing highly intellectual graduates with reputable
+                                        character
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-inline">
+                                        <img alt="twitter-icon" class="mr-2 mr-lg-3" style="color: transparent;"
+                                            src="./assets/svgs/icons/twitter.svg" />
+                                    </div>
+                                    <div class="d-inline">
+                                        <img alt="facebook-icon" class="mr-2 mr-lg-3" style="color: transparent;"
+                                            src="./assets/svgs/icons/facebook.svg" />
+                                    </div>
+                                    <div class="d-inline">
+                                        <img alt="instagram-icon" class="mr-2 mr-lg-3" style="color: transparent;"
+                                            src="./assets/svgs/icons/instagram.svg" />
+                                    </div>
+                                    <div class="d-inline">
+                                        <img alt="linkedin-icon" class="mr-2 mr-lg-3" style="color: transparent;"
+                                            src="./assets/svgs/icons/linkedin.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 pl-lg-5 mt-2 mt-lg-0 mb-4">
+                            <div class="px-lg-4 text-white">
+                                <h3 class="font-bold text-white mb-2 mb-lg-4">Quick Links</h3>
+                                <ul class="px-0" style="list-style: none;">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Research</a></li>
+                                    <li><a href="#">Campuses</a></li>
+                                    <li><a href="#">Giving/Donations</a></li>
+                                    <li><a href="#">Enterprises</a></li>
+                                    <li><a href="#">Calendars</a></li>
+                                    <li><a href="#">Health &amp; Safety</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                    <li><a href="#">Global Locations</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-2 mt-2 mt-lg-0 mb-4">
+                            <div class="px-lg-4 text-white">
+                                <h3 class="font-bold text-white mb-2 mb-lg-4">Tetfund Interventions</h3>
+                                <ul class="px-0" style="list-style: none;">
+                                    <li><a href="#">High Impact</a></li>
+                                    <li><a href="#">Zonal</a></li>
+                                    <li><a href="#">Academy</a></li>
+                                    <li><a href="#">Research</a></li>
+                                    <li><a href="#">ICT Support</a></li>
+                                    <li><a href="#">Entrepreneurship</a></li>
+                                    <li><a href="#">Teaching Practice</a></li>
+                                    <li><a href="#">Library</a></li>
+                                    <li><a href="#">Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-2 mt-lg-0 mb-4">
+                            <div class="px-lg-4 text-white">
+                                <h3 class="font-bold text-white mb-2 mb-lg-4">Downloads</h3>
+                                <ul class="px-0" style="list-style: none;">
+                                    <li><a href="#">2020/2021 Academic Calendar</a></li>
+                                    <li><a href="#">List of Faculties and Departments</a></li>
+                                    <li><a href="#">Student Handbook</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-3 mt-2 mt-lg-0 mb-4 mb-lg-0">
+                            <div class="px-lg-4 text-white">
+                                <h3 class="font-bold text-white mb-2 mb-lg-4">Contact</h3>
+                                <ul class="px-0" style="list-style: none;">
+                                    <li class="mb-2">Email Us!</li>
+                                    <li class="mb-2">
+                                        <a href="mailto:info@imsu.edu.ng">
+                                            <img class="mr-2" src="./assets/svgs/icons/email-white.svg" />
+                                            info@imsu.edu.ng
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">Call Us!</li>
+                                    <li class="mb-2">
+                                        <a href="tel:2348038558948">
+                                            <img class="mr-2" src="./assets/svgs/icons/phone-white.svg" />
+                                            08038558948
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 pl-lg-5 mt-2 mt-lg-0 mb-4">
+                            <div class="px-lg-4 text-white">
+                                <h3 class="font-bold text-white mb-2 mb-lg-4">Alumni</h3>
+                                <ul class="px-0" style="list-style: none;">
+                                    <li><a href="#">Awards</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Leadership</a></li>
+                                    <li><a href="#">Academic</a></li>
+                                    <li><a href="#">Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-2 mt-2 mt-lg-0 mb-4">
+                            <div class="px-lg-4 text-white">
+                                <h3 class="font-bold text-white mb-2 mb-lg-4">News</h3>
+                                <ul class="px-0" style="list-style: none;">
+                                    <li><a href="#">Media Highlights</a></li>
+                                    <li><a href="#">Most Recent News</a></li>
+                                    <li><a href="#">Popular News</a></li>
+                                    <li><a href="#">Conference</a></li>
+                                    <li><a href="#">Attendance</a></li>
+                                    <li><a href="#">Institution Based</a></li>
+                                    <li><a href="#">Research</a></li>
+                                    <li><a href="#">IMSU Events</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-2 mt-lg-0 mb-4">
+                            <div class="px-lg-4 text-white">
+                                <h3 class="font-bold text-white mb-2 mb-lg-4">Stakeholders</h3>
+                                <ul class="px-0" style="list-style: none;">
+                                    <li><a href="#">Tetfund</a></li>
+                                    <li><a href="#">NUC</a></li>
+                                    <li><a href="#">Ministry of Education</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black px-4 px-lg-8 py-2 py-lg-4 text-center text-lg-left"><span style="color: #d9d9d9;">©
+                    2023 Copyright | Imo State University (IMSU).</span></div>
+        </div>
+    </main>
+
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
