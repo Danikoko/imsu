@@ -23,7 +23,7 @@ body {
 }
 
 .bg-greenish {
-  background-color: #019342;
+  background-color: #019342 !important;
 }
 
 .bg-blackish {
@@ -306,7 +306,7 @@ body {
 }
 
 .bg-green {
-  background-color: #019342;
+  background-color: #019342 !important;
 }
 
 ul.about-us li {
