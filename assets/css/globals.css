@@ -4,10 +4,12 @@ body {
 
 .main-link {
   color: #FFFFFF;
+  transition: 0.2s;
 }
 
 .main-link:hover {
   color: #019342;
+  transition: 0.2s;
 }
 
 .bg-black {
