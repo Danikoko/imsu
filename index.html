@@ -24,7 +24,7 @@
     <main>
         <div class="fixed-top">
             <div class="container-fluid">
-                <div class="row bg-greenish px-4 px-lg-5 py-0 text-white d-md-flex d-none">
+                <div class="row bg-greenish px-lg-8 py-0 text-white d-md-flex d-none">
                     <div class="col-8 col-md-2 self-center">
                         <div class="row">
                             <div class="col-12">
@@ -47,17 +47,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-10 d-none d-md-block">
+                    <div class="col-10 d-none d-md-block text-end">
                         <ul class="top-bar-list navbar-nav ml-auto mt-2 mt-lg-0 top-navbar d-inline">
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Staff</a></li>
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Students</a></li>
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Alumni</a></li>
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Transcript</a></li>
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Donations</a></li>
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Payments</a></li>
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#">TETFUND Interventions</a></li>
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#">Scholarships</a></li>
-                            <li class="mx-2 nav-item"><a class="nav-link" href="#"><button
+                            <li class="mx-2 my-1 nav-item">
+                                <div class="dropdown">
+                                    <a class="text-sm" href="#" data-bs-toggle="dropdown" aria-expanded="false">Staff
+                                        <img src="./assets/svgs/icons/caret-down.svg" alt="Caret Down" /></a>
+                                    <ul class="dropdown-menu py-1">
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Action</a>
+                                        </li>
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Another
+                                                Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mx-2 my-1 nav-item"><a class="text-sm" href="#">Students</a></li>
+                            <li class="mx-2 my-1 nav-item"><a class="text-sm" href="#">Alumni</a></li>
+                            <li class="mx-2 my-1 nav-item"><a class="text-sm" href="#">Transcript</a></li>
+                            <li class="mx-2 my-1 nav-item"><a class="text-sm" href="#">Donations</a></li>
+                            <li class="mx-2 my-1 nav-item"><a class="text-sm" href="#">Payments</a></li>
+                            <li class="mx-2 my-1 nav-item">
+                                <div class="dropdown">
+                                    <a class="text-sm" href="#" data-bs-toggle="dropdown" aria-expanded="false">TETFUND
+                                        Interventions
+                                        <img src="./assets/svgs/icons/caret-down.svg" alt="Caret Down" /></a>
+                                    <ul class="dropdown-menu py-1">
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Action</a>
+                                        </li>
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Another
+                                                Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mx-2 my-1 nav-item"><a class="text-sm" href="#">Scholarships</a></li>
+                            <li class="ms-5 my-1 nav-item"><a class="text-sm" href="#"><button
                                         class="top-bar-button px-2 py-1" type="button">Webmail</button></a></li>
                         </ul>
                     </div>
@@ -66,14 +91,14 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="row bg-white px-4 px-lg-5 py-1 py-lg-4 text-black d-none d-lg-flex">
-                    <div class="col-8 col-lg-8">
+                <div class="row bg-white px-lg-8 py-1 py-lg-4 text-black d-none d-lg-flex">
+                    <div class="col-7 col-lg-7">
                         <a href="/"><img alt="Logo" style="color: transparent;" src="./assets/svgs/logo.svg" /></a>
                     </div>
-                    <div class="col-lg-4 d-none d-lg-block text-right self-center">
+                    <div class="col-lg-5 d-none d-lg-block text-right self-center">
                         <div class="row">
-                            <div class="col-12">
-                                <div class="d-inline-block pr-5">
+                            <div class="col-5">
+                                <div>
                                     <div class="row">
                                         <div class="col-3 align-self-end pr-0">
                                             <img alt="Email icon" style="color: transparent;"
@@ -89,7 +114,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-inline-block pl-4 border-left-light">
+                            </div>
+                            <div class="col-2 align-self-end">
+                                <img src="./assets/svgs/icons/nav-divider.svg" alt="" />
+                            </div>
+                            <div class="col-4 offset-1">
+                                <div class="text-end">
                                     <div class="row">
                                         <div class="col-3 align-self-end px-0">
                                             <img alt="Phone icon" style="color: transparent;"
@@ -123,18 +153,96 @@
                             </button>
                         </div>
                     </div>
-                    <div class="collapse navbar-collapse bg-dark-bluish px-4 px-lg-5 py-1" id="mainNavbarToggler">
-                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0 top-navbar">
-                            <li class="active nav-item"><a class="nav-link" href="#">About IMSU</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">Academics</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">Units</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">Research</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">Resources</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">Admission</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">Enterprise</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">Campuses</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">E-Learning</a></li>
-                            <li class="false nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <div class="collapse navbar-collapse bg-dark-bluish px-2 px-lg-8 py-1" id="mainNavbarToggler">
+                        <ul class="navbar-nav mx-lg-8 mt-2 mt-lg-0 top-navbar w-100 justify-content-between">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link mx-0" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false">About IMSU
+                                        <img src="./assets/svgs/icons/caret-down.svg" alt="Caret Down" /></a>
+                                    <ul class="dropdown-menu py-1">
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Action</a>
+                                        </li>
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Another
+                                                Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link mx-0" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Academics
+                                        <img src="./assets/svgs/icons/caret-down.svg" alt="Caret Down" /></a>
+                                    <ul class="dropdown-menu py-1">
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Action</a>
+                                        </li>
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Another
+                                                Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link mx-0" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Units
+                                        <img src="./assets/svgs/icons/caret-down.svg" alt="Caret Down" /></a>
+                                    <ul class="dropdown-menu py-1">
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Action</a>
+                                        </li>
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Another
+                                                Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="active false nav-item"><a class="nav-link mx-0" href="#">Research</a></li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link mx-0" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Resources
+                                        <img src="./assets/svgs/icons/caret-down.svg" alt="Caret Down" /></a>
+                                    <ul class="dropdown-menu py-1">
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Action</a>
+                                        </li>
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Another
+                                                Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link mx-0" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Admission
+                                        <img src="./assets/svgs/icons/caret-down.svg" alt="Caret Down" /></a>
+                                    <ul class="dropdown-menu py-1">
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Action</a>
+                                        </li>
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Another
+                                                Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link mx-0" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Enterprise
+                                        <img src="./assets/svgs/icons/caret-down.svg" alt="Caret Down" /></a>
+                                    <ul class="dropdown-menu py-1">
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Action</a>
+                                        </li>
+                                        <li class="d-block"><a class="dropdown-item text-sm px-2" href="#">Another
+                                                Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="false nav-item"><a class="nav-link mx-0" href="#">Campuses</a></li>
+                            <li class="false nav-item"><a class="nav-link mx-0" href="#">E-Learning</a></li>
+                            <li class="false nav-item"><a class="nav-link mx-0" href="#">Contact Us</a></li>
                             <li class="false nav-item">
                                 <a class="nav-link p-0" href="#">
                                     <button class="green-button px-3 py-2 h-auto w-100">
@@ -237,18 +345,18 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 px-lg-5"
+            <div class="px-4 px-lg-8"
                 style="background-image: url('./assets/svgs/general/slope.svg'); background-size: cover;">
                 <div class="d-none d-lg-block" style="padding-top: 50px;"></div>
                 <div class="d-block d-lg-none" style="padding-top: 50px;"></div>
-                <div class="px-0 px-lg-5">
+                <div class="px-0 px-lg-8">
                     <div class="row">
                         <div class="col-12 col-lg-6 text-center d-none d-lg-flex">
                             <img alt="Welder image" class="w-100" style="color: transparent;"
                                 src="./assets/svgs/general/vc.svg" />
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000"
-                            class="col-12 col-lg-6 pr-lg-5 self-center aos-init">
+                            class="col-12 col-lg-6 pr-lg-8 self-center aos-init">
                             <h3 class="text-black welcome-heading mb-3 text-lg-left text-center font-bold">
                                 WELCOME TO IMO STATE UNIVERSITY
                             </h3>
@@ -275,7 +383,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 px-lg-5" style="margin-top: 100px; margin-bottom: 50px;">
+            <div class="px-lg-8" style="margin-top: 100px; margin-bottom: 50px;">
                 <div class="row mx-1 mx-lg-0">
                     <div class="col-12 text-black text-center">
                         <h3 class="welcome-heading font-bold">EXPLORE IMSU</h3>
@@ -435,7 +543,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 px-lg-5"
+            <div class="px-lg-8"
                 style="margin-top: 10px; padding-top: 80px; padding-bottom: 80px; background-image: url('./assets/images/inforgaphic.jpg'); background-size: cover;">
                 <div class="row mx-1 mx-lg-0">
                     <div class="col-12">
@@ -453,7 +561,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 px-lg-5" style="padding-bottom: 30px;">
+            <div class="px-lg-8" style="padding-bottom: 30px;">
                 <div class=" row mx-1 mx-lg-0">
                     <div class="col-12 my-5 text-center">
                         <h3 class="welcome-heading font-bold text-black">OUR PROGRAMME STUDIES
@@ -535,7 +643,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 px-lg-5 d-none d-lg-block" style="padding-top: 50px; padding-bottom: 50px;">
+            <div class="px-lg-8 d-none d-lg-block" style="padding-top: 50px; padding-bottom: 50px;">
                 <div class="row">
                     <div class="col-12 col-lg-6 row mx-1 mx-lg-0 pl-1">
                         <div class="col-12">
@@ -612,7 +720,7 @@
                     </div>
                     <div class="col-12 col-lg-6 mx-1 mx-lg-0 pl-2">
                         <div class="pb-lg-5" style="background-color: #f5f5f5;">
-                            <div class="row pl-lg-5 pr-lg-3 pb-5">
+                            <div class="row pl-lg-8 pr-lg-3 pb-5">
                                 <div class="col-12">
                                     <div class="row mb-2">
                                         <div class="col-12">
@@ -723,7 +831,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 px-lg-5 d-block d-lg-none" style="padding-top: 10px; padding-bottom: 20px;">
+            <div class="px-lg-8 d-block d-lg-none" style="padding-top: 10px; padding-bottom: 20px;">
                 <div class="row">
                     <div class="col-12 col-lg-6 row mx-1 mx-lg-0 pl-1">
                         <div class="col-12">
@@ -803,7 +911,7 @@
                     </div>
                     <div class="col-12 col-lg-6 mx-1 mx-lg-0 pl-2">
                         <div class="pb-lg-5" style="background-color: #f5f5f5;">
-                            <div class="row pl-lg-5 pr-lg-3 pb-5">
+                            <div class="row pl-lg-8 pr-lg-3 pb-5">
                                 <div class="col-12">
                                     <div class="row mb-2">
                                         <div class="col-12">
@@ -939,7 +1047,7 @@
         </div>
         <div>
             <div class="pt-5" style="background-image: url(./assets/images/footer-bg.jpg); background-size: cover;">
-                <div class="p-lg-5 p-4 px-lg-8">
+                <div class="py-4 px-lg-8">
                     <div class="row">
                         <div class="col-12 col-lg-3 mt-2 mt-lg-0 mb-4 mb-lg-0">
                             <div class="row">
@@ -972,7 +1080,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 pl-lg-5 mt-2 mt-lg-0 mb-4">
+                        <div class="col-12 col-lg-3 pl-lg-8 mt-2 mt-lg-0 mb-4">
                             <div class="px-lg-4 text-white">
                                 <h3 class="font-bold text-white mb-2 mb-lg-4">Quick Links</h3>
                                 <ul class="px-0" style="list-style: none;">
@@ -1037,7 +1145,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 pl-lg-5 mt-2 mt-lg-0 mb-4">
+                        <div class="col-12 col-lg-3 pl-lg-8 mt-2 mt-lg-0 mb-4">
                             <div class="px-lg-4 text-white">
                                 <h3 class="font-bold text-white mb-2 mb-lg-4">Alumni</h3>
                                 <ul class="px-0" style="list-style: none;">
@@ -1079,7 +1187,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-black px-4 px-lg-5 py-2 py-lg-4 text-center text-lg-left"><span style="color: #d9d9d9;">©
+            <div class="bg-black px-lg-8 py-2 py-lg-4 text-center text-lg-left"><span style="color: #d9d9d9;">©
                     2023 Copyright | Imo State University (IMSU).</span></div>
         </div>
     </main>

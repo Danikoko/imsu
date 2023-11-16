@@ -2,6 +2,10 @@ body {
   font-family: 'Poppins' !important;
 }
 
+.text-sm {
+  font-size: 12px;
+}
+
 .main-link {
   color: #FFFFFF;
   transition: 0.2s;
@@ -49,10 +53,12 @@ body {
   border-radius: 5px;
   color: #FFFFFF;
   border: none;
+  transition: 0.2s;
 }
 
 .top-bar-button:hover {
   background-color: #17386a;
+  transition: 0.2s;
 }
 
 .main-mt {
@@ -346,4 +352,18 @@ ul.about-us li a {
 
 .top-bar-list li {
   display: inline-block;
+}
+
+.top-bar-list a:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.dropdown-item {
+  text-decoration: none !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #019342 !important;
 }
